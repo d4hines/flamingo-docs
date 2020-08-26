@@ -13,6 +13,7 @@ module.exports = {
       "basics/verifying_your_program"
     ],
     "Tutorial: TodoMVC": [
+      "todomvc/intro"
     ],
     "Meta": [
       "meta/roadmap",
