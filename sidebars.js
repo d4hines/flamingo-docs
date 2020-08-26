@@ -12,7 +12,7 @@ module.exports = {
       "basics/axioms",
       "basics/verifying_your_program"
     ],
-    "Tutorial: TodoMVC": [
+    "Walkthrough: TodoMVC": [
       "todomvc/intro"
     ],
     "Meta": [

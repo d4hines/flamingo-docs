@@ -1,5 +1,6 @@
 ---
 title: Verifying Your Program ✔️
+sidebar_label: Verifying Your Program️
 ---
 
 ## Running our First Analysis

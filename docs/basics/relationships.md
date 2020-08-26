@@ -1,5 +1,6 @@
 ---
 title: 'Step 2: Relationships ❤️'
+sidebar_label: 'Step 2: Relationships'
 ---
 
 If we've defined our sorts, we're well on our way to a working model of our system.

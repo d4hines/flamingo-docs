@@ -1,5 +1,6 @@
 ---
 title: Intro 🤓
+sidebar_label: 'Intro'
 ---
 
 Writing a Flamingo program involves five steps:

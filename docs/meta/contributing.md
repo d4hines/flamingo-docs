@@ -1,5 +1,6 @@
 ---
 title: Contributing 🙌
+sidebar_label: Contributing
 ---
 
 There are lots of fun, hard problems to solve around the language itself, but
@@ -8,3 +9,4 @@ Flamingo enables a new kind of rapid prototyping combined with
 formal verification, and that's novel combination - one that might
 even seem like an oxymoron at first. If you come up with a super
 cool use case, post it as an issue on Github!
+

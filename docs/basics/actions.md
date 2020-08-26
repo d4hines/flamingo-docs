@@ -1,5 +1,6 @@
 ---
 title: 'Step 3: Actions 💣'
+sidebar_label: 'Step 3: Actions'
 ---
 
 So far we've described our objects and relationships between them,

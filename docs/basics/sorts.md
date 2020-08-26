@@ -1,5 +1,6 @@
 ---
 title: 'Step 1: Sorts 🌎'
+sidebar_label: 'Step 1: Sorts'
 ---
 
 Every object in an ALM system has a _sort_. Sorts are roughly analogous

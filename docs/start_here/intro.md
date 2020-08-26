@@ -1,5 +1,6 @@
 ---
 title: Intro 🛣️
+sidebar_label: Intro 
 ---
 
 **Flamingo is compiler and runtime for ALM[[1](#1)], a DSL for describing state

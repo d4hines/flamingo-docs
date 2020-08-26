@@ -1,5 +1,6 @@
 ---
 title: 'Step 4: Axioms 🧾'
+sidebar_label: 'Step 4: Axioms'
 ---
 
 In imperative programming, we bring our program to life with _procedures_

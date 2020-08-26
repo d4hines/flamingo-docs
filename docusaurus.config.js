@@ -8,6 +8,7 @@ module.exports = {
   organizationName: 'flamingo-lang', // Usually your GitHub org/user name.
   projectName: 'flamingo-docs', // Usually your repo name.
   themeConfig: {
+    sidebarCollapsible: false,
     navbar: {
       title: 'Flamingo',
       logo: {
