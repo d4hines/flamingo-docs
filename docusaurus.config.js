@@ -1,0 +1,54 @@
+module.exports = {
+  title: 'Flamingo',
+  tagline: 'Logic programming reborn for the Web.',
+  url: 'https://flamingo-lang.org',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  favicon: 'img/favicon.ico',
+  organizationName: 'flamingo-lang', // Usually your GitHub org/user name.
+  projectName: 'flamingo', // Usually your repo name.
+  themeConfig: {
+    navbar: {
+      title: 'Flamingo',
+      logo: {
+        alt: 'Flamingo Lang',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          to: 'docs/',
+          activeBasePath: 'docs',
+          label: 'Docs',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/flamingo-lang/flamingo',
+          label: 'GitHub',
+          position: 'right',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      copyright: `Copyright © ${new Date().getFullYear()} Daniel Hines. Built with Docusaurus.`,
+    },
+  },
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          // It is recommended to set document id as docs home page (`docs/` path).
+          homePageId: 'doc1',
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/facebook/docusaurus/edit/master/website/',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      },
+    ],
+  ],
+};
