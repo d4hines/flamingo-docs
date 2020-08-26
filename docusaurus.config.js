@@ -39,11 +39,11 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'doc1',
+          homePageId: 'intro',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/flamingo-lang/flamingo-docs/edit/master/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
