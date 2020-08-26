@@ -1,4 +1,6 @@
-# Step 3: Actions 💣
+---
+title: 'Step 3: Actions 💣'
+---
 
 So far we've described our objects and relationships between them,
 but our system is still quite boring, since nothing ever happens and

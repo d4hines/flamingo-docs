@@ -1,5 +1,5 @@
 ---
-title: Installing Flamingo
+title: Installing Flamingo 📦
 ---
 
 Installation is easy! Just grab it from NPM:

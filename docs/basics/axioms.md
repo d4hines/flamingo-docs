@@ -1,4 +1,6 @@
-# Step 4: Axioms 🧾
+---
+title: 'Step 4: Axioms 🧾'
+---
 
 In imperative programming, we bring our program to life with _procedures_
 that implement some particular _algorithm_. In contrast, ALM is completely

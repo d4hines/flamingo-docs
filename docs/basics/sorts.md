@@ -1,4 +1,6 @@
-# Step 1: Sorts 🌎
+---
+title: 'Step 1: Sorts 🌎'
+---
 
 Every object in an ALM system has a _sort_. Sorts are roughly analogous
 to classes in object-oriented languages or types in typed functional languages,

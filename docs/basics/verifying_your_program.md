@@ -1,4 +1,8 @@
-# Verifying Your Program ✔️
+---
+title: Verifying Your Program ✔️
+---
+
+## Running our First Analysis
 
 Having written our fruit and basket system, it's now
 verify it for correctness. To do this, copy it into
@@ -35,6 +39,8 @@ constraints, Flamingo can assist you by automatically verifying those constraint
 don't contradict each other. It's similar to
 [property-based testing](https://hypothesis.works/articles/what-is-property-based-testing/)
 , only built into the heart of the language itself.
+
+## Making Things More Interesting
 
 Let's take a closer look at our fruit and basket system from the perspective of
 verification. Notice that our main relationships are described in the static and
@@ -183,6 +189,8 @@ $ flamingo verify fruit_and_basket.alm
 Thinking...
 ✔️ No conflicts found!
 ```
+
+## Finding Rhyme and Reason
 
 As we've said, in ALM, crafting correct programs comes down to defining good
 states and transitions ruling out bad states and transitions. In the previous

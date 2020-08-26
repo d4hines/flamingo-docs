@@ -1,4 +1,6 @@
-# Step 2: Relationships ❤️
+---
+title: 'Step 2: Relationships ❤️'
+---
 
 If we've defined our sorts, we're well on our way to a working model of our system.
 But sorts aren't enough: as they say, life is all about _relationships_. In ALM, we

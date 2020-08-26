@@ -1,4 +1,6 @@
-# Basics 🤓
+---
+title: Intro 🤓
+---
 
 Writing a Flamingo program involves five steps:
 
