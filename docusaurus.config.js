@@ -2,7 +2,7 @@ module.exports = {
   title: 'Flamingo',
   tagline: 'Logic programming reborn for the Web.',
   url: 'https://flamingo-lang.org',
-  baseUrl: '/flamingo-docs/',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'flamingo-lang', // Usually your GitHub org/user name.
