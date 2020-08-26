@@ -26,4 +26,4 @@ compiler - no need to write tests by hand!
 In the next few sections, we'll go through each step in the context of designing
 a simple example system: fruits and a fruit basket. Our system won't be
 "plugged in" to the DOM or anything - we'll cover that in the
-[TodoMVC example](./../todomvc/todomvc.md) a bit later.
+[TodoMVC example](../todomvc/intro.md) a bit later.
