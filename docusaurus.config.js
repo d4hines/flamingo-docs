@@ -6,7 +6,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'flamingo-lang', // Usually your GitHub org/user name.
-  projectName: 'flamingo', // Usually your repo name.
+  projectName: 'flamingo-docs', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Flamingo',
