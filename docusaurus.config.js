@@ -13,7 +13,7 @@ module.exports = {
       title: 'Flamingo',
       logo: {
         alt: 'Flamingo Lang',
-        src: 'img/logo.svg',
+        src: 'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/259/flamingo_1f9a9.png'
       },
       items: [
         {

@@ -7,9 +7,9 @@ sidebar_label: Intro
 machines in an ultra-compact way, emphasizing simplicity, modularity, and
 correctness.** 
 
-Flamingo is built with web apps in mind and ~~compiles to efficient, portable
-javascript~~ is interpreted by a WebAssembly backend [[2](#2)]. Flamingo programs
-handle _state management_ - you can think of Flamingo as DSL for writing
+Flamingo is built with web apps in mind and compiles to ~~efficient, portable~~
+Javascript[[2](#2)].
+Flamingo programs handle _state management_ - you can think of Flamingo as DSL for writing
 Redux reducers. Hook up browser events to Flamingo's runtime, bind state changes
 to the DOM as views with, e.g., React, and _voilà_! you have a web app!
 
@@ -23,13 +23,12 @@ At the same time, ALM is carefully limited in its expressiveness compared to oth
 logic programming systems, always favoring simplicity and maintainability over
 terseness and higher-orderedness.
 
-Flamingo's semantics as a state machine language make it amenable to automatic
-verification: describe both your positive and negative constraints in the same
-expressive language, and Flamingo will automatically verify they hold on every 
-possible sequence of inputs[[3](#3)]. It's like Alloy or TLA+, but easy.
+Flamingo is also built for _correctness_. Its semantics as a state machine language
+make it amenable to automatic verification: describe both your positive and negative
+constraints in the same expressive language, and Flamingo will automatically verify
+they hold on every possible sequence of inputs[[3](#3)]. It's like Alloy or TLA+, but easy.
 
-Incidentally, these same limits allow Flamingo's
-runtime to take advantage of decades of optimization research in the fields of
+Flamingo benefits from decades of optimization research in the fields of
 Datalog and ASP. Combined with Flamingos' automatic verification, these
 characteristics make Flamingo ideal for the rapid design and implementation of
 complex, practical systems. 
@@ -38,7 +37,6 @@ In terms of language theory, ALM is a _logic programming language_, specifically
 an extension of [Datalog](https://en.wikipedia.org/wiki/Datalog) that adds an explicit
 notion of action and change, negative constraints, and a powerful, object-oriented module
 system[[4](#4)].
-
   
 ## A Little Example
 
@@ -82,7 +80,7 @@ actions and change beginning with John McCarthy's
 [situation calculus](https://en.wikipedia.org/wiki/Situation_calculus) in 1975.
 
 [<a name="2">2</a>]: The Flamingo-to-JS is a work in progress. For now, Flamingo is translated
-into ASP and interpreted by the [Clingo solver](https://github.com/domoritz/clingo-wasm).
+into Prolog and interpreted by the [Tau Prolog Interpreter](https://tau-prolog.org).
 
 [<a name="3">3</a>]: This is currently a bit hand-wavy in that we only check a fixed number of
 objects up to a fixed horizon of actions. In the short term, this will be configurable. In the 
