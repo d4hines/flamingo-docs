@@ -14,10 +14,12 @@ module.exports = {
     ],
     "Walkthrough: TodoMVC": [
       "todomvc/intro",
-      "todomvc/encoding"
+      "todomvc/architecture",
+      "todomvc/encoding",
+      "todomvc/creating_a_session"
+
     ],
     "Meta": [
-      "meta/roadmap",
       "meta/contributing",
     ]
   },

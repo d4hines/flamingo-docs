@@ -19,4 +19,5 @@ You'll want to have at least a basic familiarity with hooks before you continue.
 
 :::tip Follow Along on the Repl
 The implementation is hosted on the wonderful Repl.it! 
-[Follow along and edit things on the fly in the repl](https://repl.it/@d4hines/flamingo-todomvc#README.md).
+[Follow along and edit things on the fly in the repl](https://repl.it/@d4hines/flamingo-todomvc#README.md). When you're there, click the big green "Run" button
+to start the app (give it some time, as it has to install quite a few npm packages).
