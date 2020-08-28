@@ -16,8 +16,9 @@ module.exports = {
       "todomvc/intro",
       "todomvc/architecture",
       "todomvc/encoding",
-      "todomvc/creating_a_session"
-
+      "todomvc/creating_a_session",
+      "todomvc/querying_a_session",
+      "todomvc/happy_reading"
     ],
     "Meta": [
       "meta/contributing",
