@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.61">
+<title data-react-helmet="true">Architecture Overview 🏛️ | Flamingo</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" property="og:title" content="Architecture Overview 🏛️ | Flamingo"><meta data-react-helmet="true" name="description" content="Before we get into the nitty-gritty, a high-level overview of"><meta data-react-helmet="true" property="og:description" content="Before we get into the nitty-gritty, a high-level overview of"><meta data-react-helmet="true" property="og:url" content="https://flamingo-lang.org/docs/todomvc/architecture"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://flamingo-lang.org/docs/todomvc/architecture"><link rel="stylesheet" href="/styles.bca3425b.css">
+<link rel="preload" href="/styles.5e262058.js" as="script">
+<link rel="preload" href="/runtime~main.729b0da1.js" as="script">
+<link rel="preload" href="/main.939d6c44.js" as="script">
+<link rel="preload" href="/1.580dd0fa.js" as="script">
+<link rel="preload" href="/2.c36a3219.js" as="script">
+<link rel="preload" href="/24.567422ba.js" as="script">
+<link rel="preload" href="/25.aec77495.js" as="script">
+<link rel="preload" href="/20ac7829.8bef2d27.js" as="script">
+<link rel="preload" href="/17896441.839e2ff4.js" as="script">
+<link rel="preload" href="/4683adee.d5f55a7b.js" as="script">
+</head>
+<body>
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
+<nav class="navbar navbar--light navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><div aria-label="Navigation bar toggle" class="navbar__toggle" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></div><a class="navbar__brand" href="/"><img class="navbar__logo" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/259/flamingo_1f9a9.png" alt="Flamingo Lang"><strong class="navbar__title">Flamingo</strong></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/">Docs</a></div><div class="navbar__items navbar__items--right"><a href="https://github.com/flamingo-lang/flamingo" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub</a><div class="react-toggle react-toggle--disabled displayOnlyInLargeViewport_2aTZ"><div class="react-toggle-track"><div class="react-toggle-track-check"><span class="toggle_BsTx">🌜</span></div><div class="react-toggle-track-x"><span class="toggle_BsTx">🌞</span></div></div><div class="react-toggle-thumb"></div><input type="checkbox" disabled="" aria-label="Dark mode toggle" class="react-toggle-screenreader-only"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a class="navbar__brand" href="/"><img class="navbar__logo" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/twitter/259/flamingo_1f9a9.png" alt="Flamingo Lang"><strong class="navbar__title">Flamingo</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a aria-current="page" class="menu__link navbar__link--active" href="/docs/">Docs</a></li><li class="menu__list-item"><a href="https://github.com/flamingo-lang/flamingo" target="_blank" rel="noopener noreferrer" class="menu__link">GitHub</a></li></ul></div></div></div></nav><div class="main-wrapper"><div class="docPage_2gpo"><div class="docSidebarContainer_3_JD" role="complementary"><div class="sidebar_2urC"><div class="menu menu--responsive menu_5FrY"><button aria-label="Open Menu" aria-haspopup="true" class="button button--secondary button--sm menu__button" type="button"><svg aria-label="Menu" class="sidebarMenuIcon_Dm3K" xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 32 32" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><ul class="menu__list"><li class="menu__list-item"><a class="menu__link menuLinkText_2zSB">Start Here ️</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/">Intro</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/start_here/install">Installing Flamingo</a></li></ul></li><li class="menu__list-item"><a class="menu__link menuLinkText_2zSB">Basics</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/basics/basics">Intro</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/basics/sorts">Step 1: Sorts</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/basics/relationships">Step 2: Relationships</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/basics/actions">Step 3: Actions</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/basics/axioms">Step 4: Axioms</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/basics/verifying_your_program">Verifying Your Program️</a></li></ul></li><li class="menu__list-item"><a class="menu__link menuLinkText_2zSB">Walkthrough: TodoMVC</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/todomvc/intro">Intro</a></li><li class="menu__list-item"><a aria-current="page" class="menu__link menu__link--active active" tabindex="0" href="/docs/todomvc/architecture">Architecture Overveiw</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/todomvc/encoding">Encoding the Spec</a></li><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/todomvc/creating_a_session">Creating a Session</a></li></ul></li><li class="menu__list-item"><a class="menu__link menuLinkText_2zSB">Meta</a><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" tabindex="0" href="/docs/meta/contributing">Contributing</a></li></ul></li></ul></div></div></div><main class="docMainContainer_3EyW"><div class="container padding-vert--lg docItemWrapper_1EkI"><div class="row"><div class="col docItemCol_2ASc"><div class="docItemContainer_3QWW"><article><header><h1 class="docTitle_1Lrw">Architecture Overview 🏛️</h1></header><div class="markdown"><p>Before we get into the nitty-gritty, a high-level overview of
+the architecture of Flamingo+React apps will help us keep our
+bearings. </p><p>Flamingo uses the <a href="https://krasimirtsonev.com/blog/article/dissection-of-flux-architecture-or-how-to-write-your-own-react" target="_blank" rel="noopener noreferrer"><em>Flux Architecture</em></a>.
+The Flux Architecture
+is really just the <a href="https://guide.elm-lang.org/architecture/" target="_blank" rel="noopener noreferrer">Elm Architecture</a>, which is refined,
+minimalistic version of
+<a href="https://en.wikipedia.org/wiki/Functional_reactive_programming" target="_blank" rel="noopener noreferrer">Functional Reactive Programming</a>.</p><p>As a quick refresher, the basic idea is a <em>unidirectional flow of data</em>, as in this diagram:
+<img src="https://krasimirtsonev.com/blog/article/dissection-of-flux-architecture-or-how-to-write-your-own-react/assets/fluxiny_basic_flux_architecture.jpg">.</p><p>Note that:</p><ul><li>The views dispatch actions as result of DOM events, etc.</li><li>The dispatcher updates the store.</li><li>The store updates its state based on pure functions. This makes
+state transitions predicable and easy to test.</li><li>The updated state is pushed to the views via queries, resulting in
+the display of a new state, and the cycle repeats.</li></ul><p>Additionally, &quot;side-band&quot; actions can occur from HTTP events, etc (hence
+the lone action in bottom-left field in the diagram).</p><p>As it turns out, decades before we were all writing React, the AI/robotics
+research community called this pattern the Sense-Think-Act:</p><ul><li>The agent (think robot) <em>senses</em> his environment. In our case, he
+might observe a DOM event.</li><li>The agent <em>thinks</em> about how to respond. The Flamingo runtime will
+use your ALM specification to do this.</li><li>The agent <em>acts</em> accordingly. This corresponds to updating the DOM
+in our views.</li></ul><p>In our case, the <em>think</em> act is very simple - the only DOM only
+has to do a single update, and then it can rest, waiting for the
+next user input. In its traditional setting, ALM was used to do
+<em>planning</em>, where the agent comes up with a sequence of actions
+to perform to achieve some desired goal. Maybe in the future
+Flamingo will be used for robotics and video games, but for now,
+we&#x27;ll stick to UI.</p><p>Speaking of, our basic structure will be this:</p><ul><li>At the top level of our program, we&#x27;ll create a <em>session</em>, an
+in-memory database you can query and update via actions.</li><li>We&#x27;ll pass this session to all our components via <a href="https://reactjs.org/docs/context.html" target="_blank" rel="noopener noreferrer">React Context</a>.</li><li>Components will query the session for whatever data they need by subscribing via hooks.</li><li>Components will dispatch actions to update the state.</li></ul><p>The third bullet point is a major difference between, Flamingo and, say, Redux. In Redux,
+the typical pattern is to have a few &quot;smart components&quot; that retrieve data from the store
+via selectors, and then feed the data as well as any callbacks to many &quot;dumb components&quot; by
+prop-drilling.</p><p>By contrast, in Flamingo, we can express very precise, powerful queries in the same language
+as writing axioms. This eliminates the need for selectors entirely - queries <em>are</em> the selectors.
+Additionally, in this TodoMVC example, every component queries for its own data, making every
+component a &quot;smart component&quot;. Who knows? Maybe this a terrible idea - Flamingo best practices
+are still yet to be discovered and codified. But I offer two items in defense of this integrated
+approach:</p><ul><li>This dramatically reduces the amount of boilerplate needed. Compared with the React Hooks
+example this code was forked from, the Flamingo version is nearly 1/2 as much code.</li><li>While this technically ruins some of the blissful simplicity of testing dumb components,
+it makes it easy to move <em>all</em> the logic into Flamingo, where we have far more powerful
+verification tools.</li></ul><p>Flamingo is an adventure in finding the sweet-spot among the opposing forces of code agility,
+formal verification, and maintainability. We&#x27;re still figuring it all out, so let us know
+if you have opinions!</p></div></article><div class="margin-vert--xl"><div class="row"><div class="col"><a href="https://github.com/flamingo-lang/flamingo-docs/edit/master/docs/todomvc/architecture.md" target="_blank" rel="noreferrer noopener"><svg fill="currentColor" height="1.2em" width="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" style="margin-right:0.3em;vertical-align:sub"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div></div></div><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"><a class="pagination-nav__link" href="/docs/todomvc/intro"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">« Intro 📃</div></a></div><div class="pagination-nav__item pagination-nav__item--next"><a class="pagination-nav__link" href="/docs/todomvc/encoding"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Encoding the Spec 🤖 »</div></a></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3klQ"></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2020 Daniel Hines. Built with Docusaurus.</div></div></div></footer></div>
+<script src="/styles.5e262058.js"></script>
+<script src="/runtime~main.729b0da1.js"></script>
+<script src="/main.939d6c44.js"></script>
+<script src="/1.580dd0fa.js"></script>
+<script src="/2.c36a3219.js"></script>
+<script src="/24.567422ba.js"></script>
+<script src="/25.aec77495.js"></script>
+<script src="/20ac7829.8bef2d27.js"></script>
+<script src="/17896441.839e2ff4.js"></script>
+<script src="/4683adee.d5f55a7b.js"></script>
+</body>
+</html>
