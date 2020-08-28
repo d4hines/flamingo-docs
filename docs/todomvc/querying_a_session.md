@@ -1,6 +1,6 @@
 ---
 title: Querying a Session ❔
-sidebar_label: Creating a Session
+sidebar_label: Querying a Session
 ---
 
 Once we've created a session, we can _query_ it
