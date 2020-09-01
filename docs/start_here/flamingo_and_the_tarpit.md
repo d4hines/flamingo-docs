@@ -1,4 +1,7 @@
-# Flamingo and the Tar Pit
+---
+title: Flamingo and the Tarpit 💀
+sidebar_label: Flamingo and the Tarpit
+---
 
 Before we go over details of using Flamingo, we should discuss the problem
 it aims to solve.

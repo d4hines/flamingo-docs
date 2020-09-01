@@ -2,6 +2,7 @@ module.exports = {
   sidebar: {
     "Start Here ️": [
       "start_here/intro",
+      "start_here/flamingo_and_the_tarpit",
       "start_here/install"
     ],
     "Basics": [
