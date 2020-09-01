@@ -8,11 +8,14 @@ but our system is still quite boring, since nothing ever happens and
 nothing ever changes. Let's fix that!
 
 So what are the actions in our fruit and basket system? Well, for starters,
-we could have a "put fruit in basket" action. We notate this in the same
+we could have a "put fruit in basket" action. In ALM, actions are just
+another sort of object, so we put them in with sorts.
+We notate this in the same
 way as objects:
 
 ```alm
-actions
+sorts
+    ...
     put_fruit_in_basket :: action
 ```
 
@@ -42,7 +45,7 @@ sorts
         attributes
             variety : varieties
     oranges :: fruits
-actions
+    
     put_fruit_in_basket :: action
         attributes
             selected_fruit : fruits

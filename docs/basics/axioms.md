@@ -129,7 +129,7 @@ sorts
         attributes
             variety : varieties
     oranges :: fruits
-actions
+
     put_fruit_in_basket :: action
         attributes
             selected_fruit : fruits

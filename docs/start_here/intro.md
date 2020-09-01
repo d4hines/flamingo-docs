@@ -48,7 +48,7 @@ sorts
         attributes
             title : string
             text : string
-actions
+
     menu_action :: action
         target : menu
     open_menu :: menu_action
