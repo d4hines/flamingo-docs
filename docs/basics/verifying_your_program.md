@@ -10,6 +10,10 @@ verify it for correctness. To do this, copy it into
 a file (we'll call it `fruit_and_basket.alm`) and run
 the following on the command line:
 
+:::caution
+This part of Flamingo is still under construction. Coming soon!
+:::
+
 ```
 flamingo verify fruit_and_basket.alm
 ```
