@@ -49,8 +49,8 @@ The first axiom represents two facts about varieties of apples. The
 syntax is pretty straight forward:
 
 ```
-good_for_baking(golden_delicious).
-good_for_baking(granny_smith).
+good_for_baking(golden_delicious) = true.
+good_for_baking(granny_smith) = true.
 ```
 
 The next axiom is a state constraint. In ALM's syntax:
@@ -142,8 +142,8 @@ fluents
     defined
         can_bake_pie : booleans
 axioms
-    good_for_baking(golden_delicious).
-    good_for_baking(granny_smith).
+    good_for_baking(golden_delicious) = true.
+    good_for_baking(granny_smith) = true.
 
     // The basket is full if there are three distinct fruits in it. 
     basket_is_full if

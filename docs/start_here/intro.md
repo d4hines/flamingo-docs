@@ -7,8 +7,8 @@ sidebar_label: Intro
 machines in an ultra-compact way, emphasizing simplicity, modularity, and
 correctness.** 
 
-Flamingo is built with web apps in mind and compiles to ~~efficient, portable~~
-Javascript[[2](#2)].
+Flamingo is built with web apps in mind and ~~compiles to efficient, portable
+Javascript~~ solved by a WASM interpreter[[2](#2)].
 Flamingo programs handle _state management_ - you can think of Flamingo as DSL for writing
 Redux reducers. Hook up browser events to Flamingo's runtime, bind state changes
 to the DOM as views with, e.g., React, and _voilà_! you have a web app!
@@ -80,7 +80,7 @@ actions and change beginning with John McCarthy's
 [situation calculus](https://en.wikipedia.org/wiki/Situation_calculus) in 1975.
 
 [<a name="2">2</a>]: The Flamingo-to-JS is a work in progress. For now, Flamingo is translated
-into Prolog and interpreted by the [Tau Prolog Interpreter](https://tau-prolog.org).
+into ASP and solved by the wonderful [Clingo solver](https://github.com/potassco/clingo).
 
 [<a name="3">3</a>]: This is currently a bit hand-wavy in that we only check a fixed number of
 objects up to a fixed horizon of actions. In the short term, this will be configurable. In the 
