@@ -61,8 +61,8 @@ axioms
         instance(A, open_menu),
         target(A) = Menu.
 
-    occurs(A) causes open(Menu) if
-        instance(A, open_menu),
+    occurs(A) causes -open(Menu) if
+        instance(A, close_menu),
         target(A) = Menu.
 ```
 
